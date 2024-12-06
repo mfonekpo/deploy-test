@@ -8,8 +8,8 @@ def my_flow(name: str = "world"):
 if __name__ == "__main__":
     flow.from_source(
         source="https://github.com/mfonekpo/deploy-test.git",
-        entrypoint="path/to/your/flow.py:your_flow_function"
+        entrypoint="prefect_gitStorage.py:my_flow",
     ).deploy(
-        name="my-deployment",
-        work_pool_name="my-work-pool",
+        name="mygithub-deployment",
+        work_pool_name="managedPrefect-workpool",
     )
