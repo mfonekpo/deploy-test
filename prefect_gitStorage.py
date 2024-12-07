@@ -12,4 +12,5 @@ if __name__ == "__main__":
     ).deploy(
         name="mygithub-deployment",
         work_pool_name="managedPrefect-workpool",
+        cron="* * * * *"
     )
