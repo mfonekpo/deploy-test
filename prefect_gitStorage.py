@@ -10,10 +10,10 @@ def my_flow(name: str = "world"):
 
 if __name__ == "__main__":
     flow.deploy(
-        name="mygithub-deployment",
-        work_pool_name="managedPrefect-workpool",
-        cron="* * * * *",
-        timzone="Africa/Lagos",
+        # name="mygithub-deployment",
+        # work_pool_name="managedPrefect-workpool",
+        # cron="* * * * *",
+        # timzone="Africa/Lagos",
     )
 
 
